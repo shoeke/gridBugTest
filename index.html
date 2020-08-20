@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid test for bugboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+
+    <audio src="audio/switch-click.wav" id="click"></audio>
+    <audio src="audio/confirm.wav" id="confirm"></audio>
+    <div class="container">
+        <div class="grid-whole">
+            <div class="grid-item instruct-side">
+                <div class="instruct-text">
+                    <h1>Instructions</h1>
+                    <p class="write">This page works on desktop or landscape view on most devices.
+                      Hover (or tap on mobile) over any box to shine light on the subject, or click or tap the yellow light switch button to examine the whole collection at once.</p>
+                </div>
+
+            </div>
+            <div class="grid-item label">
+                <div class="label-box">
+                    <img src="images/bugboard-label.png" alt="">
+                </div>
+            </div>
+            <div class="grid-item info">
+                <div class="modal modal1 dragonfly">
+                    <h2>Dragonfly</h2>
+                    <ul>
+                    <li>One of the oldest insects</li>
+                    <li>Can snag prey mid-air</li>
+                    <li>Scientific order of Odonata • "toothed one" because of it's jagged jaw</li>
+                    <li>Top speed approx. 18 mph</li>
+                    <li>Almost 360&#176; vision (one blind spot in the back)</li>
+                    <li>Lays eggs in water, nymphs live in water up to 2 years</li></ul>
+                  </div>
+                  <div class="modal modal2 scarab">
+                    <h2>Scarab</h2>
+                    <ul>
+                      <li>Scarab is the common family name that describes 30,000 species of beetles</li>
+                      <li>Their antennae have 3 segments that form a club</li>
+                      <li>Front legs often have hooks or scoops for digging</li>
+                      <li>The Hercules beetle can reach 6 inches in length</li>
+                      <li>Dung beetles eat exactly what you think they would</li>
+                    </ul>
+                  </div>
+                  <div class="modal modal3 weevil">
+                    <h2>Weevil</h2>
+                    <ul>
+                      <li>Known for their snouts, different species have varying lengths</li>
+                      <li>Many species can destroy whole crops or grain storages</li>
+                      <li>With 45,000 species Weevils are the largest family in the animal kingdom</li>
+                      <li>Extreme weevil species include the Giraffe Weevil, the Polka Dotted Clown Weevil, and the Hose Nose Weevil</li>
+
+                    </ul>
+                  </div>
+                  <div class="modal modal4 ants">
+                    <h2>Ants</h2>
+                    <ul>
+                      <li>Ants can "talk" to each other through pheromones or by exhanging bodily fluids (yup).</li>
+                      <li>They are very strong lifting about 20 times their body weight</li>
+                      <li>Queens have wings! They shed them after initiating a new nest</li>
+                      <li>No lungs! They breathe through tiny holes covering their bodies</li>
+                    </ul>
+                  </div>
+                  <div class="modal modal5 cucumber">
+                    <h2>Cucumber Beetle</h2>
+                    <ul>
+                      <li>Also known as Southern Corn Rootworm</li>
+                      <li>They live in the US east of the Rocky Mountains and prefer the South</li>
+                      <li>Voracious like many beetles, they are a threat to cucumber, melon, soy, and corn crops</li>
+                      <li>Their less destructive cousin the ladybug is sometimes confused for these</li>
+                      <li>Eggs are laid in the soil at the roots of the host plant</li>
+                    </ul>
+                  </div>
+                 
+                  <div class="modal modal6" potato-beetle>
+                    <h2>Potato Beetle</h2>
+                    <ul>
+                      <li>First found disrupting potato harvests in America in mid-1800s</li>
+                      <li>A beetle can lay 500 eggs in a month</li>
+                      <li>Eggs are bright yellow-orange</li>
+                      <li>Known for their resistence to pesticides</li>
+                      <li>Originally existed on a plant called Buffalo Bur until humans brought potatoe plants from South America</li>
+                    </ul>
+                  </div>
+                 
+                  <div class="modal modal7 wasp">
+                    <h2>Wasp</h2>
+                    <ul>
+                      <li>There are about 30,000 species of wasps</li>
+                      <li>Chew wood into pulp to make their paper-like nests</li>
+                      <li>There are both social and solitary species of wasps. Most species are solitary.</li>
+                      <li>Helpful in controlling pest populations</li>
+                      <li>The social species only survive one year, all die off in winter with the exception of the queen who starts a new nest in the Spring.</li>
+                    </ul>
+                  </div>
+                  <div class="modal modal8 moth">
+                    <h2>Moth</h2>
+                    <ul>
+                      <li>There are more than 11,000 species of moths &hellip; just in the U.S. <U class="S"></U> </li>
+                      <li>The largest moth has a wingspan of about 12 inches</li>
+                      <li>They don't have noses, but are expert sniffers using their antennae</li>
+                      <li>Like butterflies, moths have scales covering their wings</li>
+                      <li>You know baby moths as caterpillars</li>
+                      <li>Moths live in all habitats but polar</li>
+                    </ul>
+                  </div>
+                  <div class="modal modal9 ladybug">
+                    <h2>Ladybug</h2>
+                    <ul>
+                      <li>Ladybug is a nickname for Lady Bird Beetle</li>
+                      <li>Can have spots or stripes</li>
+                      <li>Used by farmers as bio control of pests &#x2014; mostly aphids</li>
+                      <li>Can emit a nasty toxin to deter being eaten</li>
+                      <li>Has 2 sets of wings, inner transparent flight wings, and harder protection wings that cover the delicate ones below</li>
+                    </ul>
+                  </div>
+                  <div class="modal modal10" yellow-ladybug>
+                    <h2>Yellow Ladybug</h2>
+                    <ul>
+                      <li>Ladybugs have yellow blood</li>
+                      <li>Ladybugs are colorless or yellow when they first emerge from pupa stage and begin to develop spots</li>
+                      <li>Yellow ladybugs are simply in a stage of developing their red color</li>
+                      <li>A yellow ladybug may have a mutation to keep it yellow </li>
+                      <li>It might not be a ladybug but a spotted cucumber beetle which looks similar but has a more elongated body</li>
+                    </ul>
+                  </div>
+                  
+            </div>
+            <div class="grid-item collection-box">
+                <img src="images/bugboard-02.png" alt="illustrated bug collection">
+            </div>
+            <div class="grid-item light-box">
+                <svg version="1.1" id="shades" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
+	 viewBox="0 0 1030.3 644.6" style="enable-background:new 0 0 1030.3 644.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.63;}
+	.st1{fill:#3E1C2C;}
+	.st2{opacity:0.5;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;enable-background:new    ;}
+</style>
+<g>
+	<g id="box10">
+		<g class="st0">
+			<rect x="899.5" y="522.6" class="st1" width="99.8" height="91.6"/>
+			<rect x="899.5" y="522.6" class="st2" width="99.8" height="91.6"/>
+		</g>
+	</g>
+	<g id="box9">
+		<g class="st0">
+			<rect x="899.5" y="400" class="st1" width="99.8" height="92.6"/>
+			<rect x="899.5" y="400" class="st2" width="99.8" height="92.6"/>
+		</g>
+	</g>
+	<g id="box8">
+		<g class="st0">
+			<rect x="598.8" y="400" class="st1" width="270.4" height="214.2"/>
+			<rect x="598.8" y="400" class="st2" width="270.4" height="214.2"/>
+		</g>
+	</g>
+	<g id="box7">
+		<g class="st0">
+			<rect x="407.4" y="400" class="st1" width="158.9" height="214.1"/>
+			<rect x="407.4" y="400" class="st2" width="158.9" height="214.1"/>
+		</g>
+	</g>
+	<g id="box6">
+		<g class="st0">
+			<rect x="30" y="399.2" class="st1" width="347.2" height="214.9"/>
+			<rect x="30" y="399.2" class="st2" width="347.2" height="214.9"/>
+		</g>
+	</g>
+	<g id="box5">
+		<g class="st0">
+			<polygon class="st1" points="542.1,370.1 542.1,263.7 717.7,263.7 717.7,370 			"/>
+			<polygon class="st2" points="542.1,370.1 542.1,263.7 717.7,263.7 717.7,370 			"/>
+		</g>
+	</g>
+	<g id="box4">
+		<g class="st0">
+			<rect x="30" y="292.9" class="st1" width="128.7" height="74.9"/>
+			<rect x="30" y="292.9" class="st2" width="128.7" height="74.9"/>
+		</g>
+	</g>
+	<g id="box3">
+		<g class="st0">
+			<polygon class="st1" points="747.8,30.5 999.3,30.5 999.3,369.5 747.6,369.5 			"/>
+			<polygon class="st2" points="747.8,30.5 999.3,30.5 999.3,369.5 747.6,369.5 			"/>
+		</g>
+	</g>
+	<g id="box2">
+		<g class="st0">
+			<rect x="542.1" y="30.5" class="st1" width="175.6" height="203.2"/>
+			<rect x="542.1" y="30.5" class="st2" width="175.6" height="203.2"/>
+		</g>
+	</g>
+	<g id="box1">
+		<g class="st0">
+			<polygon class="st1" points="511.8,30.5 512.1,367.8 186.1,367.8 186.1,265.4 30,265.4 30,30.5 			"/>
+			<polygon class="st2" points="511.8,30.5 512.1,367.8 186.1,367.8 186.1,265.4 30,265.4 30,30.5 			"/>
+		</g>
+	</g>
+</g>
+</svg> 
+
+            </div>
+            <div class="grid-item switches">
+                <div class="switch-box">
+                    <svg id="switch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"viewBox="0 0 247.84 124.74">
+                      <title>light-switch</title>
+                      <g style="isolation: isolate">
+                        <g id="shadow">
+                          <g id="switch-shadow" style="opacity: 0.21;mix-blend-mode: multiply">
+                            <image width="285" height="154" transform="translate(-17.13 -20)" xlink:href="data:image/png;base64,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"></image>
+                          </g>
+                        </g>
+                        <g id="back">
+                          <rect id="back-2" data-name="back" x="62.41" y="28.01" width="137.3" height="43.66" style="fill: #fff"></rect>
+                        </g>
+                        <g id="inset">
+                          <g id="inset-2" data-name="inset">
+                            <path id="inset-3" data-name="inset" d="M180.06,47.88a14.67,14.67,0,0,1-2.4,8.07,14.26,14.26,0,0,1-1.95,2.42,14.76,14.76,0,0,1-10.49,4.35H92a14.84,14.84,0,0,1-10.5-25.34,14.36,14.36,0,0,1,2.44-2A14.65,14.65,0,0,1,92,33h73.25A14.84,14.84,0,0,1,180.06,47.88Z" style="fill: #806940;stroke: #705c38;stroke-miterlimit: 10;stroke-width: 0.5px;opacity: 0.37"></path>
+                            <path d="M180.06,47.88a14.67,14.67,0,0,1-2.4,8.07,14.76,14.76,0,0,1-8,2.37H96.37A14.84,14.84,0,0,1,81.52,43.48a14.65,14.65,0,0,1,2.39-8.06A14.65,14.65,0,0,1,92,33h73.25A14.84,14.84,0,0,1,180.06,47.88Z" style="fill: #806940;opacity: 0.13"></path>
+                          </g>
+                        </g>
+                        <g id="button-slide">
+                          <g id="button-2" data-name="button">
+                            <g style="opacity: 0.14;mix-blend-mode: multiply">
+                              <image width="99" height="99" transform="translate(43.87 -2)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABjCAYAAACPO76VAAAACXBIWXMAAAsSAAALEgHS3X78AAAFUUlEQVR4Xu3bwWoTaxTA8f/5ZqapTaiQUq2gFUFFETeKdKvclQ9QXyfmdewDuLrotld040JRQWy9WC0NtCSxyWS+cxfTqBdrbTXxnlzPfz2TmcyPLzMJJ6KqeDYK39vA+3U5hqEcw1COYSjHMJRjGMoxDOUYhnIMQzmGoRzDUI5hKMcwlGMYyjEM5RiGcgxDOYahHMNQjmEoxzCUYxjKMQzlGIZyDEM5hqEcw1COYSjHMJRjGMoxDOUYhkq/t4G1REQA7nJXvrXNXe4qgE7YP4FkUs5XRGR5eTkstNtpq0Ul0X6Wz8x8BZJ1u1rIVF6v09uo1QYrKytxUlDMYwwRqpubWUyS6iA/Vo+SLxCZDSSpop9ABNFIMSCwEzTbSLOPrVAUnc78fD4JKKYxms1m2Fpdzbb7/VqvV5lLkEUkXkD0Eiongco+u/UQfY/KczS8LNC1SqW3dXxqqj23tJQ3Go24zz4mMotx586dhM3NY9mgekKkOKfIReAq6AWQM8AskO2zaw7sgK6DvASeCvpCNXmdp50PzM9/vHfvXrHPfv95JjFKCI6l7J4Og+KahrgEchnlLDAHVCkh9ruJKyVIB9hCeAP6TGJYjWnyZMD0W+YxCWIOYwgRYvdMQryByi3Q68ApoEaJENgfYpgCkRKlDbwDeYzoAw3pXwOm3155eKXbUFsfWaYebZvSDNwsV4QQbxD5Q0RvKJwGZvg+wjABEsrtM6CiaCoqhFgMstjtb91e/VtE+pZu6ma+9ImIbN1ezbJB90SIxTVUbolwQ9EzlB9LCYeD+LIhSlXgNOh1hSWR4tx2f7q2zLKZ9w+GMJZZDtv96Vp5s2Zp78KdBhmuiJ8pIMwAp0AvK3Kx1+vNVW9Ws+GXSAv97JscSSIiC7fb6SDP64pcJOpl4NTeBRzNOSoBtLb3EHA1KGdjsl21tDpMnIiitFpUougCopdAF/cu3CjPTxDJQOcQzkvQ84M8ry/cbqdWVsco3+wP16QpSW06IzKLyklEZssLd+R7xMGVuFWiLiJ6KYoutFpUFBv3cBMYAHkxECFmIkwBGTpiiLJydYiU6JHZpDadNWmO41hHzgzGMB0PwufK189EmBJilheD8R7vCJnD+FWNHf0H+m0xLOYYhvptMUSMPEJ9kTmMsV+k8vVzVfpKyLMkHe/xjpAZjCxJVQm5Kn0gZzwoimqO6g6i7wnsFO3dvEFjHMc6ciYwGjS0aO/mBMqLpLqDag4jBhEi0CHIGirPg8pGvU5PjDxYmcAQhHqdXlDZQOU5yBpIe+/ijapyVSBbKK80yqs0y1ob92sDKz+jm8BQVd24XxukWdYS9AVBngHvULowIhAh7gG/AZ5G4U0ojndWWBnN648gExgAK6zE41O7bdXktcAqyGOBt6CjAIl7sO9Angn6olKpbHUednIrqwIMYaiqzt1fyvN05kMMyRNEH6jySJD1nwSJoN0SVh4LrKomr49P7bYtrQowhAHQ0EZkno8Dpt8WhEcE/vwMQgcoOPxNXSm37wiyrsojRB/EkDzJ05kPc/eXTK0KMDiQAIceSvjeQMJXwwgF4VEMM+s+HXLEDhjXWeTbM1PDytkpYW1SxnTAMAZ8Y5Dt4GnCYZ+mCidlgA2MY8C/RzwPmrMdtt+87SSMdsIEYACHnkAfNqmT6BOBMeww/80YNon/0ZgojP97pr5n/O45hqEcw1COYSjHMJRjGMoxDOUYhnIMQzmGoRzDUI5hKMcwlGMYyjEM5RiGcgxDOYahHMNQjmEoxzCUYxjKMQzlGIZyDEM5hqEcw1COYSjHMJRjGMoxDOUYhvoHOSeJ/+GM/usAAAAASUVORK5CYII="></image>
+                            </g>
+                            <g style="opacity: 0.14;mix-blend-mode: multiply">
+                              <image width="99" height="99" transform="translate(37.87 -2)" xlink:href="data:image/png;base64,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"></image>
+                            </g>
+                            <circle cx="91.58" cy="47.6" r="13.21" style="fill: #ffc252;stroke: #f7bc50;stroke-miterlimit: 10;stroke-width: 0.912585026844361px"></circle>
+                            <g style="opacity: 0.48;mix-blend-mode: soft-light">
+                              <path d="M92.17,35.83a10,10,0,0,1,5.58,1,12.44,12.44,0,0,1,4.54,3.64,11.45,11.45,0,0,1,2.3,5.37,10.56,10.56,0,0,1-.69,5.64,21.21,21.21,0,0,0-.83-5.29,14.67,14.67,0,0,0-2.36-4.5A16.4,16.4,0,0,0,97,38.17,18.22,18.22,0,0,0,92.17,35.83Z" style="fill: #fff"></path>
+                            </g>
+                            <g style="opacity: 0.25;mix-blend-mode: soft-light">
+                              <path d="M91.43,60.23a9.19,9.19,0,0,1-5.78-.64,12,12,0,0,1-4.74-3.68,11.22,11.22,0,0,1-2.29-5.59A9.79,9.79,0,0,1,79.7,44.6a27,27,0,0,0,1.22,5.2,16.23,16.23,0,0,0,2.37,4.28,18.38,18.38,0,0,0,3.52,3.47A22.14,22.14,0,0,0,91.43,60.23Z"></path>
+                            </g>
+                          </g>
+                        </g>
+                        <g id="shell">
+                          <path id="shell-2" data-name="shell" d="M193.79,16H64a37.69,37.69,0,0,0-37.7,37.69h0A37.69,37.69,0,0,0,64,91.38H193.79a37.68,37.68,0,0,0,37.69-37.69h0A37.68,37.68,0,0,0,193.79,16ZM178,56A14.26,14.26,0,0,1,176,58.37a14.76,14.76,0,0,1-10.49,4.35H92.28a14.84,14.84,0,0,1-10.5-25.34,14.36,14.36,0,0,1,2.44-2A14.65,14.65,0,0,1,92.28,33h73.25a14.84,14.84,0,0,1,14.84,14.85A14.67,14.67,0,0,1,178,56Z" style="fill: #fff"></path>
+                        </g>
+                        <g id="label-group">
+                          <g id="labels">
+                            <text transform="translate(192.21 55.38)" style="opacity: 0.84;font-size: 23.487159729003906px;fill: #5a3d49;font-family: Caveat-Bold, Caveat;font-weight: 700">on</text>
+                            <text transform="translate(45.12 55.38)" style="opacity: 0.84;font-size: 23.487159729003906px;fill: #5a3d49;font-family: Caveat-Bold, Caveat;font-weight: 700">off</text>
+                            <text transform="translate(102.74 84.06)" style="font-size: 23.487159729003906px;fill: #3e1c2c;font-family: Caveat-Bold, Caveat;font-weight: 700"><tspan style="letter-spacing: 0.009999645932495244em">L</tspan><tspan x="10.24" y="0">ights</tspan></text>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    
+                  </div>
+                <div class="audio-stuff">
+                    <h2>Music</h2>
+                    <audio controls src="audio/Barefoot_McCoy_-_Summer_in_My_Soul.mp3" id="bg"></audio>
+                    <div class="roll-credits">
+                        <p class="write">Music and lyrics by Barefoot&nbsp;McCoy.
+                            <a href="https://www.barefootmccoy.com">www.barefootmccoy.com</a>
+                            </p>
+                    </div> 
+                </div> 
+                
+            </div>
+
+        </div>
+    </div> <!--end of container-->
+    <div class="popup">
+      <div class="popup-box">
+        <div class="popup-top">
+          <div class="tacky">
+            <img src="images/tack-02.png" alt="thumbtack">
+            <img src="images/tack-02.png" alt="thumbtack">
+          </div>
+          <div class="instruct-text">
+            <h1>Instructions</h1>
+            <p class="write">This page works on desktop or landscape view on most devices.
+             Hover (or tap on mobile) over any box to shine light on the subject, or click or tap the yellow light switch button to examine the whole collection at once.</p>
+        </div>
+        </div>
+        <h2 class="closeup">Tap or Click to close.</h2>
+      </div>
+
+    </div>
+
+
+      <script src="behave-bugs.js"></script>
+</body>
+</html>
