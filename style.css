@@ -371,6 +371,20 @@ body {
      .credit {
          display: none;
      }
+     .grid-whole {
+        grid-template-columns: 15% 15% 30% 40%;
+        grid-template-areas: 
+        "switch switch . label"
+        "collection collection collection collection"
+        "info info info info";
+    }
+    .switches {
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .switch-box {
+        width: 90%;
+    }
  }
 @media screen and (max-width: 600px) {
     .info {
