@@ -11,6 +11,12 @@ $(document).ready(function(){
 $(".closeup").click(function(){
     $(".popup").fadeOut(600);
   })
+
+  if($(".credit").is(":visible")){
+    $(".credit-popup").hide();
+  } else {
+    $(".credit-popup").show();
+  }
     
 
 
