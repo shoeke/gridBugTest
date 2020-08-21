@@ -325,7 +325,10 @@ body {
     }
 }
  @media screen and (min-width: 1500px) {
-     .modal li {
-         font-size: 22px;
+     .modal li, .instruct-side p.write {
+         font-size: 24px;
+     }
+     .modal {
+         max-width: 350px;
      }
  }
